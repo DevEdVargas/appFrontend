@@ -1,0 +1,12 @@
+
+<div *ngIf="seleccionado">
+
+  <h2>modificar el nombre del Proyecto: {{seleccionado.nombre}}</h2>
+
+
+  <div>
+    <label>Nombre:  </label>
+    <input [(ngModel)]="seleccionado.nombre" placeholder="nombre proyecto">
+  </div>
+
+</div>

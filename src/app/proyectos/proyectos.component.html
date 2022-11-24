@@ -1,0 +1,14 @@
+
+
+  <h2>Lista Proyectos</h2>
+  <h3>eliga un proyecto para cambiar su nombre</h3>
+  <ul class="proyectos">
+    <li *ngFor = "let proyectoItem of proyectos"
+    (click)="seleccionar(proyectoItem)"
+    [class.selected]="proyectoItem===seleccionado">
+
+      <span class="insignia">{{proyectoItem.id}}</span>{{proyectoItem.nombre}}
+    </li>
+  </ul>
+
+  <efbv-proyecto-detalle [seleccionado]="seleccionado"></efbv-proyecto-detalle>
